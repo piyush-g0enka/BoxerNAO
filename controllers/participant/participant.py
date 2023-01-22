@@ -1,6 +1,5 @@
 # Copyright 1996-2023 Cyberbotics Ltd.
 #
-
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -32,7 +31,7 @@ class Wrestler (Robot):
         # retrieves the WorldInfo.basicTimeTime (ms) from the world file
         time_step = int(self.getBasicTimeStep())
         while self.step(time_step) != -1:  # mandatory function to make the simulation run
-            motion_library.play('Backwards')
+            motion_library.play('Forward')
 
 
 # create the Robot instance and run main loop
